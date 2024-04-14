@@ -12,7 +12,7 @@ public class Maximum_element {
         //Maximum elemennt in the array
         System.out.println();
         System.out.println("Maximum element of the array is: ");
-        int max=-1;
+        int max=arr[0];
         for(int i=0;i<n;i++){
             if(max<arr[i]){
                 max=arr[i];
