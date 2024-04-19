@@ -12,19 +12,23 @@ public class searching_in_array {
         }
         System.out.println("Target number: ");
         int num=s.nextInt();
-        //searching
-        int index=0;
+        searching
         for(int i=0;i<n;i++){
-            if (arr[i]==num){
-                index=i;
+            if(num==arr[i]){
+                System.out.println(num+"Found at index"+i);
+                break;//Remove it to get multiple Index having Same value
+            }
+            else{
+                System.out.println("Not Found");
                 break;
             }
         }
-        if(index!=0){
-            System.out.println("Found "+num+"at index: "+index);
-        }
-        else{
-            System.out.println("Not Found");
+        //For the same number having last index
+        for(int i=n-1;i>=0;i--){
+            if(num==arr[i]){
+                System.out.println(num+"Found at index"+i);
+                break;
+            }
         }
     }
 }

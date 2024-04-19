@@ -8,7 +8,7 @@ public class Indexing_Marks {
         System.out.println("Enter the Marks of those students: ");
         for(int i=0;i<n;i++){
             marks[i]=s.nextInt();
-            System.out.println(marks[i]);
+            System.out.print(marks[i]);
         }
         System.out.println("The students who scored less than 35: ");
         for(int i=0;i<n;i++){
